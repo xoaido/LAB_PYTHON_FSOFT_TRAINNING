@@ -12,8 +12,10 @@ if __name__ == '__main__':
         
     target =int(input("Enter integer target :"))
     
-    for i in range(len(nums)): 
-        print(i)
+    for i in range(len(nums)): #chạy từ 0 đến len(nums)-1
+        for j in range(i+1,len(nums)):
+            if int(nums[i]) +int(nums[j]) ==target :
+                print ([i,j])
        
       
         
